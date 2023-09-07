@@ -15,9 +15,17 @@ app.get('/', (req, res) => {
         message: 'Welcome to the Tour API'
     })
 })
-// CONTROLLERS 
+// BAND CONTROLLERS 
 const bandsController = require('./controllers/bands_controllers')
 app.use('/bands', bandsController)
+
+//  EVENT CONTROLLERS 
+const eventsController = require('./controllers/events_controller')
+app.use('/events', eventsController)
+
+//  STAGE CONTROLLERS 
+const stagesController = require('./controllers/stages_controller')
+app.use('/stages', stagesController)
 
 // LISTEN
 app.listen(process.env.PORT, () => {
