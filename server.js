@@ -20,11 +20,11 @@ const bandsController = require('./controllers/bands_controllers')
 app.use('/bands', bandsController)
 
 //  EVENT CONTROLLERS 
-const eventsController = require('./controllers/events_controller')
+const eventsController = require('./controllers/events_controllers')
 app.use('/events', eventsController)
 
 //  STAGE CONTROLLERS 
-const stagesController = require('./controllers/stages_controller')
+const stagesController = require('./controllers/stage_controllers')
 app.use('/stages', stagesController)
 
 // LISTEN

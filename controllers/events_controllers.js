@@ -6,7 +6,7 @@ const { Event } = db
 const { Op } = require('sequelize')  
 
 // FIND ALL EVENTS
-events.get("/", async (req, res) => {
+event.get("/", async (req, res) => {
     try {
       const foundEvents = await Event.findAll({
         order: [["date", "ASC"]],
